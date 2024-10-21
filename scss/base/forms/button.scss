@@ -1,0 +1,121 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-block;
+	background: var(--blue-100, #356DF6);
+	color: var(--white-100, #FFF);
+	border-radius: toRem(4);
+	height: 38px;
+	padding: toRem(8) toRem(24);
+	font-family: RF Dewi Extended;
+	font-weight: 700;
+	line-height: math.div(19, 16);
+	font-size: toRem(16);
+	transition: background-color 0.3s ease, color 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #1a51dc;
+
+			color: #ffffff;
+		}
+	}
+
+	&--fw {
+		width: 100%;
+	}
+}
+
+.actionss {
+
+	// .actions__button
+	&__button {
+		margin: toRem(5);
+		display: inline-block;
+		background: var(--blue-100, #356DF6);
+		color: var(--white-100, #FFF);
+		border-radius: toRem(4);
+		height: 44px;
+		padding: toRem(7) toRem(32);
+		font-family: RF Dewi Extended;
+		font-weight: 700;
+		line-height: math.div(19, 16);
+		transition: background-color 0.3s ease, color 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #1a51dc;
+
+				color: #ffffff;
+			}
+		}
+
+		&--fw {
+			width: 100%;
+		}
+	}
+}
+
+.input-seven {
+
+	// .actions__button
+	&__actionss {
+		display: inline-block;
+		background: var(--blue-100, #356DF6);
+		color: var(--white-100, #FFF);
+		border-radius: toRem(4);
+		height: 44px;
+		padding: toRem(8) toRem(24);
+		font-family: RF Dewi Extended;
+		font-weight: 700;
+		line-height: math.div(19, 16);
+		transition: background-color 0.3s ease, color 0.3s ease;
+
+
+		@media (max-width:$mobile) {
+			width: 100%;
+
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #1a51dc;
+
+				color: #ffffff;
+			}
+		}
+
+		&--fw {
+			width: 100%;
+		}
+	}
+}
+
+.filter-actions {
+	&__button-filter {
+		display: inline-block;
+		background: var(--black-100, #1B1F33);
+		max-height: toRem(32);
+		color: var(--grey-50, #C3C5CE);
+
+		border-radius: toRem(4);
+
+		padding: toRem(5) toRem(14);
+		font-family: RF Dewi Extended;
+		font-weight: 600;
+		line-height: math.div(19, 16);
+		transition: background-color 0.3s ease, color 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: var(--blue-50, #3F86F0);
+				color: var(--white-100, #FFF);
+			}
+		}
+
+		&--fw {
+			width: 100%;
+		}
+	}
+}

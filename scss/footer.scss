@@ -1,0 +1,271 @@
+//====================================================================================================
+.footer {
+    
+    // .footer__container-footer
+    background-color: #121420;
+    @include adaptiveValue("padding-top", 60, 43);
+    border-top: 1px solid var(--black-100, #1B1F33);
+    &__container-footer { 
+        @include adaptiveValue("padding-left", 0, 78, 0, 1920, 1366);
+        @include adaptiveValue("padding-right", 0, 78, 0, 1920, 1366);
+        @media (max-width:1366px){
+            @include adaptiveValue("padding-left", 78, 16, 0, 1366, 767.98);
+            @include adaptiveValue("padding-right", 78, 16, 0, 1366, 767.98);    
+        }
+    }
+}
+
+.container-footer {
+
+    // .container-footer__box-footer
+    &__box-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.box-footer {
+   
+   @include adaptiveValue("padding-bottom",25 ,39,0, 1366,375 );
+    @media (max-width:$mobile){
+         justify-content: center;
+         align-items: center; 
+        
+    }
+    width: 100%;
+
+    // .box-footer__info-footer
+    &__info-footer {
+        display: flex;
+
+        @media (max-width:$mobile) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    // .box-footer__info-rights-footer
+    &__info-rights-footer {
+        
+        @media (min-width:$mobile){
+            border-top: 1px solid var(--black-100, #1B1F33);       
+        }
+    
+        
+        @include adaptiveValue("padding-top", 25, 18, 0, 1366, 375);
+        display: flex;
+        @media (max-width:$mobile){
+            justify-content: center;       
+        @include adaptiveValue("width",368 ,290,0,400,320 );
+        }
+       
+p{
+    color: var(--grey-100, #545B79);
+
+font-family: RF Dewi;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+a:first-child   {
+    @media (max-width:$mobile){
+        padding-top: toRem(12); 
+   }
+}
+
+a{
+    color: var(--blue-100, #356DF6);
+
+font-family: RF Dewi;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+    transition: color 0.3s ease, font-size 0.3s ease;
+    @media (any-hover: hover) {
+        &:hover {
+            color: rgb(131, 219, 227);
+            font-size: toRem(15.5);
+        }
+      }
+
+}
+        p:nth-child(2)  {
+            @media (min-width:$mobile){
+                @include adaptiveValue("padding-left",1160 ,190,0, 1920, 650 ); 
+                
+            }
+            
+          
+        }
+        
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+}
+
+.info-footer {
+    @include adaptiveValue("column-gap", 980, 467, 0, 1920, 1366);
+
+    @media (max-width:1366px) {
+        @include adaptiveValue("column-gap", 567, 200, 0, 1366, 767.98, );
+    }
+
+    // .info-footer__contact
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("padding-bottom",54 ,30,0,1366,375 );
+        p {
+            padding-top: toRem(19);
+            color: var(--grey-100, #545B79);
+            font-family: RF Dewi;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        a {
+            padding-top: toRem(12);
+            color: var(--blue-100, #356DF6);
+            font-family: RF Dewi;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        
+            transition: color 0.3s ease, font-size 0.3s ease;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: rgb(131, 219, 227);
+                    font-size: toRem(16.5);
+                }
+              }
+        
+        }
+    }
+
+    // .info-footer__company-social
+    &__company-social {
+        display: flex;
+        gap: toRem(126);
+
+        @media (max-width:$mobile) {
+            padding-top: toRem(24);
+        }
+
+    }
+}
+
+.company {
+    
+    // .company__logo
+    &__logo {
+        display: flex;
+
+        p {
+            color: var(--white-100, #FFF);
+
+            font-family: RF Dewi Extended;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+
+.company-social {
+    width: 100%;
+    justify-content: center;
+    
+    @media (max-width:$mobile) {
+        border-top: 1px solid var(--black-100, #1B1F33);
+        border-bottom: 1px solid var(--black-100, #1B1F33);
+        padding-bottom: toRem(40);
+    }
+
+    // .company-social__company
+    &__company {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(12);
+
+        p:first-child {
+            padding-bottom: toRem(8);
+            color: var(--grey-100, #545B79);
+            /* desktop/p4 (CAPS regular) */
+            font-family: RF Dewi;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+        a{
+            transition: color 0.3s ease, font-size 0.3s ease;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: rgb(131, 219, 227);
+                    font-size: toRem(16.5);
+                }
+              }
+        }
+        color: var(--white-100, #FFF);
+        /* desktop/p2 (Light) */
+        font-family: RF Dewi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    // .company-social__socials
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(12);
+
+        p:first-child {
+            padding-bottom: toRem(8);
+            color: var(--grey-100, #545B79);
+            /* desktop/p4 (CAPS regular) */
+            font-family: RF Dewi;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+        a{
+            transition: color 0.3s ease, font-size 0.3s ease;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: rgb(131, 219, 227);
+                    font-size: toRem(16.5);
+                }
+              }
+        }
+        color: var(--white-100, #FFF);
+        font-family: RF Dewi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+
+
+//====================================================================================================

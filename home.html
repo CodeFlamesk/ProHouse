@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<title>HomePage</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231217140245">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container-big">
-				<button type="button" class="menu__icon icon-menu"><span></span></button>
-				<div class="header__logo">
-					<a href=""><img src="img/Hero/logo.svg" alt="logo"></a>
-					<p><a href="#">Prohouse</a></p>
-				</div>
-				<div class="header__menu menu">
-
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Marketplace</a></li>
-							<li class="menu__item"><a href="" class="menu__link">About Us</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Developers</a></li>
-
-						</ul>
-					</nav>
-				</div>
-				<div class="header__actions actions">
-					<div class="actions__basket">
-						<img src="img/Hero/heartWithCircle.svg" alt="Heart">
-					</div>
-					<button type="button" data-da=".menu__body, 767.98" class="header__button button">Connect Wallet</button>
-				</div>
-			</div>
-		</header>
+		@@include('html/_header.htm',{})
 		<main class="page">
 			<div class="page__first-section first-section">
 				<div class="first-section__container-first container-first">
@@ -103,9 +70,10 @@
 							<!-- Фото і екшн -->
 							<div class="card-residence-rybna__img-rybna img-rybna">
 								<div class="img-rybna__like like">
-									<a href="#"><picture><source srcset="img/Hero/ResidenceRybna.webp" type="image/webp"><img src="img/Hero/ResidenceRybna.png" alt="ResidenceRybna"></picture></a>
+									<a href="#"><img src="@img/Hero/ResidenceRybna.png" alt="ResidenceRybna"></a>
 									<div class="like__into-img into-img " title="Save">
-										<button type="button" class="saveLike"><i class="fa-regular fa-heart"></i></button>
+										<button type="button" class="saveLike"><i
+												class="fa-regular fa-heart"></i></button>
 									</div>
 								</div>
 							</div>
@@ -146,7 +114,7 @@
 							<!-- Фото і екшн -->
 							<div class="card-blue-sky__img-house-sky img-house-sky">
 								<div class="img-house-sky__like like">
-									<a href=""><picture><source srcset="img/Hero/BlueSky.webp" type="image/webp"><img src="img/Hero/BlueSky.png" alt="BlueSky"></picture></a>
+									<a href=""><img src="@img/Hero/BlueSky.png" alt="BlueSky"></a>
 									<div class="like__into-img into-img " title="Save">
 
 										<button type="button" class=" saveLike ">
@@ -197,43 +165,43 @@
 						<div class="marquee__group">
 
 
-							<picture><source srcset="img/Logo-first-section/stellar.webp" type="image/webp"><img src="img/Logo-first-section/stellar.png" alt="stellar"></picture>
+							<img src="@img/Logo-first-section/stellar.png" alt="stellar">
 
 							<!-- 2 -->
-							<picture><source srcset="img/Logo-first-section/onfido.webp" type="image/webp"><img src="img/Logo-first-section/onfido.png" alt="onfido"></picture>
+							<img src="@img/Logo-first-section/onfido.png" alt="onfido">
 
 							<!-- 3 -->
-							<picture><source srcset="img/Logo-first-section/fantom.webp" type="image/webp"><img src="img/Logo-first-section/fantom.png" alt="fantom"></picture>
+							<img src="@img/Logo-first-section/fantom.png" alt="fantom">
 
 							<!-- 4 -->
-							<picture><source srcset="img/Logo-first-section/blockport.webp" type="image/webp"><img src="img/Logo-first-section/blockport.png" alt="blockport"></picture>
+							<img src="@img/Logo-first-section/blockport.png" alt="blockport">
 
 							<!-- 5 -->
-							<picture><source srcset="img/Logo-first-section/quantum.webp" type="image/webp"><img src="img/Logo-first-section/quantum.png" alt="quantum"></picture>
+							<img src="@img/Logo-first-section/quantum.png" alt="quantum">
 
 							<!-- 6 -->
-							<picture><source srcset="img/Logo-first-section/technorely.webp" type="image/webp"><img src="img/Logo-first-section/technorely.png" alt="technorely"></picture>
+							<img src="@img/Logo-first-section/technorely.png" alt="technorely">
 
 
 						</div>
 
 						<div aria-hidden="true" class="marquee__group">
-							<picture><source srcset="img/Logo-first-section/stellar.webp" type="image/webp"><img src="img/Logo-first-section/stellar.png" alt="stellar"></picture>
+							<img src="@img/Logo-first-section/stellar.png" alt="stellar">
 
 							<!-- 2 -->
-							<picture><source srcset="img/Logo-first-section/onfido.webp" type="image/webp"><img src="img/Logo-first-section/onfido.png" alt="onfido"></picture>
+							<img src="@img/Logo-first-section/onfido.png" alt="onfido">
 
 							<!-- 3 -->
-							<picture><source srcset="img/Logo-first-section/fantom.webp" type="image/webp"><img src="img/Logo-first-section/fantom.png" alt="fantom"></picture>
+							<img src="@img/Logo-first-section/fantom.png" alt="fantom">
 
 							<!-- 4 -->
-							<picture><source srcset="img/Logo-first-section/blockport.webp" type="image/webp"><img src="img/Logo-first-section/blockport.png" alt="blockport"></picture>
+							<img src="@img/Logo-first-section/blockport.png" alt="blockport">
 
 							<!-- 5 -->
-							<picture><source srcset="img/Logo-first-section/quantum.webp" type="image/webp"><img src="img/Logo-first-section/quantum.png" alt="quantum"></picture>
+							<img src="@img/Logo-first-section/quantum.png" alt="quantum">
 
 							<!-- 6 -->
-							<picture><source srcset="img/Logo-first-section/technorely.webp" type="image/webp"><img src="img/Logo-first-section/technorely.png" alt="technorely"></picture>
+							<img src="@img/Logo-first-section/technorely.png" alt="technorely">
 						</div>
 					</div>
 				</article>
@@ -313,7 +281,8 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/CottageForrest.webp" type="image/webp"><img src="img/Hero/CottageForrest.png" alt="CottageForrest"></picture></a>
+													<a href=""><img src="@img/Hero/CottageForrest.png"
+															alt="CottageForrest"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -362,7 +331,7 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/Freshness.webp" type="image/webp"><img src="img/Hero/Freshness.png" alt="Freshness"></picture></a>
+													<a href=""><img src="@img/Hero/Freshness.png" alt="Freshness"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -409,7 +378,7 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/WishHouse.webp" type="image/webp"><img src="img/Hero/WishHouse.png" alt="Wish house"></picture></a>
+													<a href=""><img src="@img/Hero/WishHouse.png" alt="Wish house"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -456,7 +425,7 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/Spruce.webp" type="image/webp"><img src="img/Hero/Spruce.png" alt="Spruce"></picture></a>
+													<a href=""><img src="@img/Hero/Spruce.png" alt="Spruce"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -503,7 +472,8 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/CottageForrest.webp" type="image/webp"><img src="img/Hero/CottageForrest.png" alt="CottageForrest"></picture></a>
+													<a href=""><img src="@img/Hero/CottageForrest.png"
+															alt="CottageForrest"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -550,7 +520,7 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/Freshness.webp" type="image/webp"><img src="img/Hero/Freshness.png" alt="Freshness"></picture></a>
+													<a href=""><img src="@img/Hero/Freshness.png" alt="Freshness"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -597,7 +567,7 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/WishHouse.webp" type="image/webp"><img src="img/Hero/WishHouse.png" alt="Wish house"></picture></a>
+													<a href=""><img src="@img/Hero/WishHouse.png" alt="Wish house"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -644,7 +614,7 @@
 											<!-- Фото і екшн -->
 											<div class="card-slider__img-card-slider img-card-slider">
 												<div class="img-card-slider__like like">
-													<a href=""><picture><source srcset="img/Hero/Spruce.webp" type="image/webp"><img src="img/Hero/Spruce.png" alt="Spruce"></picture></a>
+													<a href=""><img src="@img/Hero/Spruce.png" alt="Spruce"></a>
 													<div class="like__into-img into-img " title="Save">
 
 														<button type="button" class=" saveLike ">
@@ -730,7 +700,7 @@
 
 					<div class="container-four__display-country">
 						<div class="display-country__image-country">
-							<picture><source srcset="img/Hero/country.webp" type="image/webp"><img src="img/Hero/country.png" alt="country"></picture>
+							<img src="@img/Hero/country.png" alt="country">
 						</div>
 					</div>
 
@@ -743,7 +713,7 @@
 
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/UARealHouse.webp" type="image/webp"><img src="img/logo-four-section/UARealHouse.png" alt="UARealHouse"></picture>
+								<img src="@img/logo-four-section/UARealHouse.png" alt="UARealHouse">
 								<p>UA real house</p>
 							</div>
 
@@ -751,7 +721,7 @@
 							<!-- 2 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/ERAUkraineRealEstate.webp" type="image/webp"><img src="img/logo-four-section/ERAUkraineRealEstate.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/ERAUkraineRealEstate.png" alt="ERAUkraineRealEstate">
 								<p>ERA Ukraine Real Estate</p>
 							</div>
 
@@ -759,7 +729,7 @@
 							<!-- 3 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/HappyNeighbor.webp" type="image/webp"><img src="img/logo-four-section/HappyNeighbor.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/HappyNeighbor.png" alt="ERAUkraineRealEstate">
 								<p>HappyNeighbor</p>
 							</div>
 
@@ -767,7 +737,7 @@
 							<!-- 4 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/AmericanHomeAgents.webp" type="image/webp"><img src="img/logo-four-section/AmericanHomeAgents.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/AmericanHomeAgents.png" alt="ERAUkraineRealEstate">
 								<p>American Home Agents</p>
 							</div>
 
@@ -775,14 +745,14 @@
 							<!-- 5 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/UkrHomeAgents.webp" type="image/webp"><img src="img/logo-four-section/UkrHomeAgents.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/UkrHomeAgents.png" alt="ERAUkraineRealEstate">
 								<p>Ukr Home Agents</p>
 							</div>
 
 							<!-- 6 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/UARealEstateAgency.webp" type="image/webp"><img src="img/logo-four-section/UARealEstateAgency.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/UARealEstateAgency.png" alt="ERAUkraineRealEstate">
 								<p>UA real estate agency</p>
 							</div>
 
@@ -793,7 +763,7 @@
 							<!-- 1 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/UARealHouse.webp" type="image/webp"><img src="img/logo-four-section/UARealHouse.png" alt="UARealHouse"></picture>
+								<img src="@img/logo-four-section/UARealHouse.png" alt="UARealHouse">
 								<p>UA real house</p>
 							</div>
 
@@ -801,7 +771,7 @@
 							<!-- 2 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/ERAUkraineRealEstate.webp" type="image/webp"><img src="img/logo-four-section/ERAUkraineRealEstate.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/ERAUkraineRealEstate.png" alt="ERAUkraineRealEstate">
 								<p>ERA Ukraine Real Estate</p>
 							</div>
 
@@ -809,7 +779,7 @@
 							<!-- 3 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/HappyNeighbor.webp" type="image/webp"><img src="img/logo-four-section/HappyNeighbor.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/HappyNeighbor.png" alt="ERAUkraineRealEstate">
 								<p>HappyNeighbor</p>
 							</div>
 
@@ -817,7 +787,7 @@
 							<!-- 4 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/AmericanHomeAgents.webp" type="image/webp"><img src="img/logo-four-section/AmericanHomeAgents.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/AmericanHomeAgents.png" alt="ERAUkraineRealEstate">
 								<p>American Home Agents</p>
 							</div>
 
@@ -825,14 +795,14 @@
 							<!-- 5 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/UkrHomeAgents.webp" type="image/webp"><img src="img/logo-four-section/UkrHomeAgents.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/UkrHomeAgents.png" alt="ERAUkraineRealEstate">
 								<p>Ukr Home Agents</p>
 							</div>
 
 							<!-- 6 -->
 							<div class="groupa__firm-logo-name">
 
-								<picture><source srcset="img/logo-four-section/UARealEstateAgency.webp" type="image/webp"><img src="img/logo-four-section/UARealEstateAgency.png" alt="ERAUkraineRealEstate"></picture>
+								<img src="@img/logo-four-section/UARealEstateAgency.png" alt="ERAUkraineRealEstate">
 								<p>UA real estate agency</p>
 							</div>
 
@@ -852,14 +822,15 @@
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/DreamHouse.webp" type="image/webp"><img src="img/logo-four-section/DreamHouse.png" alt="DreamHouse"></picture>
+									<img src="@img/logo-four-section/DreamHouse.png" alt="DreamHouse">
 									<p>Dream House</p>
 								</div>
 
 								<!-- 4 -->
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/LeadingRealEstateCompanies.webp" type="image/webp"><img src="img/logo-four-section/LeadingRealEstateCompanies.png" alt="LeadingRealEstateCompanies"></picture>
+									<img src="@img/logo-four-section/LeadingRealEstateCompanies.png"
+										alt="LeadingRealEstateCompanies">
 									<p>Leading Real Estate Companies</p>
 								</div>
 
@@ -868,14 +839,14 @@
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/DreamHouse.webp" type="image/webp"><img src="img/logo-four-section/DreamHouse.png" alt="DreamHouse"></picture>
+									<img src="@img/logo-four-section/DreamHouse.png" alt="DreamHouse">
 									<p>Dream House</p>
 								</div>
 
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/RedOakRealty.webp" type="image/webp"><img src="img/logo-four-section/RedOakRealty.png" alt="RedOakRealty"></picture>
+									<img src="@img/logo-four-section/RedOakRealty.png" alt="RedOakRealty">
 									<p>Red Oak Realty</p>
 								</div>
 
@@ -884,7 +855,7 @@
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/HomePartnersofWorld.webp" type="image/webp"><img src="img/logo-four-section/HomePartnersofWorld.png" alt="HomePartnersofWorld"></picture>
+									<img src="@img/logo-four-section/HomePartnersofWorld.png" alt="HomePartnersofWorld">
 									<p>Home Partners of World</p>
 								</div>
 
@@ -900,13 +871,14 @@
 								<!-- 4 -->
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/LeadingRealEstateCompanies.webp" type="image/webp"><img src="img/logo-four-section/LeadingRealEstateCompanies.png" alt="LeadingRealEstateCompanies"></picture>
+									<img src="@img/logo-four-section/LeadingRealEstateCompanies.png"
+										alt="LeadingRealEstateCompanies">
 									<p>Leading Real Estate Companies</p>
 								</div>
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/DreamHouse.webp" type="image/webp"><img src="img/logo-four-section/DreamHouse.png" alt="DreamHouse"></picture>
+									<img src="@img/logo-four-section/DreamHouse.png" alt="DreamHouse">
 									<p>Dream House</p>
 								</div>
 
@@ -917,7 +889,7 @@
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/RedOakRealty.webp" type="image/webp"><img src="img/logo-four-section/RedOakRealty.png" alt="RedOakRealty"></picture>
+									<img src="@img/logo-four-section/RedOakRealty.png" alt="RedOakRealty">
 									<p>Red Oak Realty</p>
 								</div>
 
@@ -925,13 +897,13 @@
 								<!-- 5 -->
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/DreamHouse.webp" type="image/webp"><img src="img/logo-four-section/DreamHouse.png" alt="DreamHouse"></picture>
+									<img src="@img/logo-four-section/DreamHouse.png" alt="DreamHouse">
 									<p>Dream House</p>
 								</div>
 
 								<div class="groupa__firm-logo-name">
 
-									<picture><source srcset="img/logo-four-section/HomePartnersofWorld.webp" type="image/webp"><img src="img/logo-four-section/HomePartnersofWorld.png" alt="HomePartnersofWorld"></picture>
+									<img src="@img/logo-four-section/HomePartnersofWorld.png" alt="HomePartnersofWorld">
 									<p>Home Partners of World</p>
 								</div>
 
@@ -949,7 +921,7 @@
 				<div class="section-seven__container-seven container-seven">
 					<div class="container-seven__box-form box-form"> <!-- бекграунд форми  df -->
 						<div class="box-form__image-form-logo-first">
-							<picture><source srcset="img/logo-four-section/LogoHouseBlue.webp" type="image/webp"><img src="img/logo-four-section/LogoHouseBlue.png" alt="logo-form"></picture>
+							<img src="@img/logo-four-section/LogoHouseBlue.png" alt="logo-form">
 						</div>
 
 						<div class="box-form__contant-form contant-form"> <!-- контейнер тексту(форми) fd column-->
@@ -963,18 +935,23 @@
 
 							<!-- ФОРМА -->
 							<div class="contant-form__contant contant">
-								<div class="contant__input input">
+
+								<form class="contant__input input">
 									<label for="email" class="input__input-seven">
-										<input type="text" id="email" placeholder="Enter your email">
-										<button type="button" class="input-seven__actionss button main">Subscribe</button>
+										<input type="email" id="email" placeholder="Enter your email" required>
+										<button type="submit"
+											class="input-seven__actionss button main">Subscribe</button>
 									</label>
-								</div>
+								</form>
+
+
+
 							</div>
 						</div>
 
 
 						<div class="box-form__image-form-logo-two">
-							<picture><source srcset="img/logo-four-section/LogoHouseBlack.webp" type="image/webp"><img src="img/logo-four-section/LogoHouseBlack.png" alt="logo-form"></picture>
+							<img src="@img/logo-four-section/LogoHouseBlack.png" alt="logo-form">
 						</div>
 
 
@@ -987,53 +964,12 @@
 
 		</main>
 
-		<footer class="footer">
-			<div class="footer__container-footer container-footer">
-
-				<div class="container-footer__box-footer box-footer"> <!-- Fl column -->
-					<div class="box-footer__info-footer info-footer"> <!-- Flex -->
-						<div class="info-footer__contact">
-							<div class="company__logo">
-								<a href="#"><img src="img/Hero/logo.svg" alt="logo"></a>
-								<p>ProHouse</p>
-							</div>
-							<p>Please contact us if you have any specific
-								idea or request.</p>
-							<a href="#">info@revend.group</a>
-						</div>
-						<div class="info-footer__company-social company-social">
-							<div class="company-social__company">
-								<p>Company</p>
-								<a href="#">How it works</a>
-								<a href="#">Market</a>
-								<a href="#">About Us</a>
-							</div>
-							<div class="company-social__socials">
-								<p>Socials</p>
-								<a href="#">Twitter</a>
-								<a href="#">Instagram</a>
-								<a href="#">Twitter</a>
-							</div>
-						</div>
-
-					</div>
-					<div class="box-footer__info-rights-footer "> <!-- бордер верхній -->
-
-						<p>© 2023 ProHouse. All rights reserved</p>
-
-
-						<p>Design by <a href="#">Revard</a></p>
-
-					</div>
-				</div>
-
-			</div>
-		</footer>
+		@@include('html/_footer.htm',{})
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20231217140245"></script>
-	<script src="js/app.min.js?_v=20231217140245"></script>
-	<script src="https://kit.fontawesome.com/3cc8eca241.js?_v=20231217140245" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	@@include('html/_js.htm',{})
+	<script src="https://kit.fontawesome.com/3cc8eca241.js" crossorigin="anonymous"></script>
 
 
 </body>
