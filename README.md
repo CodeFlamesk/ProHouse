@@ -1,5 +1,5 @@
 # Prohouse - Rental Property Landing Page
-
+Link: https://codeflamesk.github.io/ProHouse/home.html
 ## About the Project
 
 Prohouse is a practice project (pet project) designed as a landing page website for renting apartments and houses. The project is built using HTML, SCSS, and JavaScript, with Swiper.js integrated for interactive elements. Additionally, a custom function was implemented for a running text (marquee) effect to enhance user engagement.
