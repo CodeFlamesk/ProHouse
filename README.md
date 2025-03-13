@@ -1,4 +1,4 @@
-# Prohouse - Rental Property Website
+# Prohouse - Rental Property Landing Page
 
 ## About the Project
 
